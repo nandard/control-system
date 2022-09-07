@@ -47,6 +47,5 @@ def calc_routh(self):
         print("SYSTEM IS UNSTABLE")
 ```
 ```calc_routh(self)``` as the core process of this class contains initialization and process about Routh Stability Process. Firstly, it define an empty zero (basically it filled with zeros) and iteratively being inserted by ```self.den``` (refering to Routh Table principle). After that, each cell will be updated by calculating Routh Table formula 
-$$arr_{i,j} = \frac{arr_{i-1][0]*arr[i-2][j+1] - arr[i-2][0]*arr[i-1][j+1]}{arr_{i-1][0]}$$
 
-This sentence uses `$` delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
+$arr_{i,j}=\frac{arr_{i-1][0]*arr[i-2][j+1]-arr[i-2][0]*arr[i-1][j+1]}{arr_{i-1][0]}$/
