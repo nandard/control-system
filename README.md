@@ -2,7 +2,7 @@
 This repo is belong to Control System class contains with Automated Routh Table Calculator based on Python. This code 100% original made by my hand :), please leave some notes if you're going to use it. Thanks!
 
 ## Libraries
-Libraries that used in this program is ```numpy``` and ```pandas```. ```numpy``` works by define and perform array while ```pandas``` is the final form after ```numpy.array``` to simplify the presentation. They imported by write 
+Libraries that used in this program is ```numpy``` and ```pandas```. ```numpy``` works to define and perform array while ```pandas``` is the final form after ```numpy.array``` to simplify the presentation. They imported by write..
 ```
 import numpy as np
 import pandas as pd
@@ -15,7 +15,7 @@ def __init__(self, den):
     self.den = np.array([float(item) for item in den.split()])
     self.deg = len(self.den)
 ```
-The constructor ```__init__``` takes string of coefficiens from polynomial, extract the number, and load into class variable. It also define ```self.deg``` variable to save array's length, reducing number of calling ```len()``` function
+The constructor ```__init__``` takes string of coefficiens from polynomial, extract the number, and load into class variable. It also define ```self.deg``` variable to save array's length, reducing number to calling ```len()``` function
 
 ```
 def set_k(self, k):
@@ -79,7 +79,7 @@ def get_poly(self, x):
 ```
 This function initialize ```x``` value as variable on ```self.den``` polynomial and return the total
 
-## Testing
+## Testing 1
 The testing can follow below example:
 ```
 # First Testing
@@ -103,5 +103,29 @@ Enter your K: 6
 SYSTEM IS UNSTABLE
 ```
 
+## Testing 2
+```
+Enter your polynomial: 12 56 37 80
+Enter your K: 17
+           0      1     2
+0       12.0   37.0  17.0
+1       56.0   80.0   0.0
+2      556.0  476.0   0.0
+3     8912.0    0.0   0.0
+4  2121056.0    0.0   0.0
+SYSTEM IS STABLE
+```
+
+## Testing 3
+```
+Enter your polynomial: 1.2 6.81 7.31
+Enter your K: 3.141
+       0      1
+0   1.20  7.310
+1   6.81  3.141
+2  23.00  0.000
+3  36.00  0.000
+SYSTEM IS STABLE
+```
 ### Notes
 Contact nanda.r.d@mail.ugm.ac.id for more information
