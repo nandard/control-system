@@ -36,7 +36,7 @@ def calc_routh(self):
 
     for i in range(2, height+2):
         for j in range(height-1):
-        arr[i][j] = (arr[i-1][0]*arr[i-2][j+1] - arr[i-2][0]*arr[i-1][j+1])//2
+        arr[i][j] = (arr[i-1][0]*arr[i-2][j+1] - arr[i-2][0]*arr[i-1][j+1])/arr[i-1][0]
         arr[i][j] += 0
 
     self.df = pd.DataFrame(arr)
