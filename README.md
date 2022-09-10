@@ -92,39 +92,39 @@ rs.calc_routh()
 ```
 It takes coefficient of polynomial and K from user, insert it into ```RouthStability``` class as constructor parameter, insert the K value, and generate Routh Table. The result can be found below:
 ```
-Enter your polynomial: 1 2 3 4 5
-Enter your K: 6
-     0    1    2
-0  1.0  3.0  5.0
-1  2.0  4.0  6.0
-2  1.0  2.0  0.0
-3  0.0  3.0  0.0
-4 -2.0  0.0  0.0
+Enter your polynomial: 1 3 5 7
+Enter your K: 9
+          0    1    2
+0  1.000000  5.0  9.0
+1  3.000000  7.0  0.0
+2  2.666667  9.0  0.0
+3 -3.125000  0.0  0.0
+4  9.000000 -0.0  0.0
 SYSTEM IS UNSTABLE
 ```
 
 ## Testing 2
 ```
-Enter your polynomial: 12 56 37 80
-Enter your K: 17
-           0      1     2
-0       12.0   37.0  17.0
-1       56.0   80.0   0.0
-2      556.0  476.0   0.0
-3     8912.0    0.0   0.0
-4  2121056.0    0.0   0.0
-SYSTEM IS STABLE
+Enter your polynomial: 11 15 19 21
+Enter your K: 29
+           0     1     2
+0  11.000000  19.0  29.0
+1  15.000000  21.0   0.0
+2   3.600000  29.0   0.0
+3 -99.833333   0.0   0.0
+4  29.000000  -0.0   0.0
+SYSTEM IS UNSTABLE
 ```
 
 ## Testing 3
 ```
-Enter your polynomial: 1.2 6.81 7.31
+Enter your polynomial: 1.2 6.78 11.11
 Enter your K: 3.141
-       0      1
-0   1.20  7.310
-1   6.81  3.141
-2  23.00  0.000
-3  36.00  0.000
+           0       1
+0   1.200000  11.110
+1   6.780000   3.141
+2  10.554071   0.000
+3   3.141000   0.000
 SYSTEM IS STABLE
 ```
 ### Notes
