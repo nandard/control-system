@@ -64,14 +64,19 @@ For Kp = 1
 |   SSE	|   1.7396e-06	|   0.0034	|   0.0033	|   0.0034	|   6.6536e-05	|
 
 Kp = 1, Ki = 1
+
 ![Kp = 1, Ki = 1](https://user-images.githubusercontent.com/77116615/189711219-a3d00c73-0902-4a3f-899c-aca785cf0e6c.png)
 Kp = 1, Ki = 3
+
 ![Kp = 1, Ki = 3](https://user-images.githubusercontent.com/77116615/189711238-016657a1-8b3d-4209-8033-192464c00bed.png)
 Kp = 1, Ki = 5
+
 ![Kp = 1, Ki = 5](https://user-images.githubusercontent.com/77116615/189711244-acaa9905-21dc-4e80-915e-c628775a6665.png)
 Kp = 1, Ki = 7
+
 ![Kp = 1, Ki = 7](https://user-images.githubusercontent.com/77116615/189711248-cdac4205-6511-460d-8eb8-96378564774e.png)
 Kp = 1, Ki = 9
+
 ![Kp = 1, Ki = 9](https://user-images.githubusercontent.com/77116615/189711253-c2a2208c-fdb8-4640-b419-b2909250ed0e.png)
 
 
@@ -87,7 +92,9 @@ For Kp = 50
 |   SSE	|    0.1127	|   0.0082	|
 
 Kp = 50, Ki = 0
+
 ![Kp = 50, Ki = 0](https://user-images.githubusercontent.com/77116615/189711364-d43497e7-d0f4-4c2d-bdfe-d66c792d7e88.png)
+
 Kp = 50, Ki = 5
 ![Kp = 50, Ki = 5](https://user-images.githubusercontent.com/77116615/189711372-33a51860-2c9c-4b43-a01c-f31a7f9de2df.png)
 
