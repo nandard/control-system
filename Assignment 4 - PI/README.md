@@ -2,7 +2,7 @@
 This dir is belong to Control System class contains with Integral Effect on Control System. This code 100% original made by my hand :), please leave some notes if you're going to use it. Thanks!
 
 ## Software
-This program run in Matlab
+This program ran in Matlab
 
 ## Variables
 `s = tf('s');` defines s as 'frequency domain' for transfer function and will be used further. 
@@ -19,7 +19,7 @@ Kp = 1;
 % Ki = 1;
 % Ki = 3;
 % Ki = 5;
- Ki = 7;
+Ki = 7;
 % Ki = 9;
 ```
 Variable above is the constant from PI control, we're trying to varies the constant to analyze integral effect on control system
@@ -56,22 +56,30 @@ ylim([0 3])
 
 ## Testing 
 For Kp = 1
-|   Parameter	|   Ki = 1	|   Ki = 3	|   Ki = 5	|   Ki = 7	|   Ki = 9	|
+|   Param	|   Ki = 1	|   Ki = 3	|   Ki = 5	|   Ki = 7	|   Ki = 9	|
 |---	|---	|---	|---	|---	|---	|
 |   Rise Time	|   22.7723	|   6.7782	|   3.5914	|   2.3175	|   2.3175	|
 |   Settling Time	|   40.3716	|   12.1907	|   6.3158	|   3.6779	|  3.6779 	|
 |   Overshoot	|   0	|   0	|   0	|   0.3523	|   0	|
 |   SSE	|   1.7396e-06	|   0.0034	|   0.0033	|   0.0034	|   6.6536e-05	|
+
 Notes: In theory, SSE should decrease following the increased Ki, but i suspect Matlab just can't compute too much floating point. Hence, i add two additional test with larger constant to show the effects.
 
 ## Additional Testing
 For Kp = 50
-|   Parameter	|   Ki = 0	|   Ki = 5	|
+|   Param	|   Ki = 0	|   Ki = 5	|
 |---	|---	|---	|
 |   Rise Time	|   0.1201	|   0.1415	|
 |   Settling Time	|   0.6376	|   29.5503	|
 |   Overshoot	|   19.6150	|   6.1627	|
 |   SSE	|    0.1127	|   0.0082	|
+
+## Conclusion
+Based on previous tests, we conclude that by adding Integral constant :
+* Risie time is **increased**
+* Settling time is **increased**
+* Overshoot is **decreased**
+* SSE is **decreased**
 
 ### Notes
 Contact nanda.r.d@mail.ugm.ac.id for more information
