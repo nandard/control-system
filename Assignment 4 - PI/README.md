@@ -55,12 +55,23 @@ ylim([0 3])
 
 
 ## Testing 
-|   Kp = 1	|   Ki = 1	|   Ki = 3	|   Ki = 5	|   Ki = 7	|   Ki = 9	|
+For Kp = 1
+|   Parameter	|   Ki = 1	|   Ki = 3	|   Ki = 5	|   Ki = 7	|   Ki = 9	|
 |---	|---	|---	|---	|---	|---	|
 |   Rise Time	|   22.7723	|   6.7782	|   3.5914	|   2.3175	|   2.3175	|
 |   Settling Time	|   40.3716	|   12.1907	|   6.3158	|   3.6779	|  3.6779 	|
 |   Overshoot	|   0	|   0	|   0	|   0.3523	|   0	|
 |   SSE	|   1.7396e-06	|   0.0034	|   0.0033	|   0.0034	|   6.6536e-05	|
+Notes: In theory, SSE should decrease following the increased Ki, but i suspect Matlab just can't compute too much floating point. Hence, i add two additional test with larger constant to show the effects.
+
+## Additional Testing
+For Kp = 50
+|   Parameter	|   Ki = 0	|   Ki = 5	|
+|---	|---	|---	|
+|   Rise Time	|   0.1201	|   0.1415	|
+|   Settling Time	|   0.6376	|   29.5503	|
+|   Overshoot	|   19.6150	|   6.1627	|
+|   SSE	|    0.1127	|   0.0082	|
 
 ### Notes
 Contact nanda.r.d@mail.ugm.ac.id for more information
