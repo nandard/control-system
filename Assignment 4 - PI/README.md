@@ -5,7 +5,7 @@ This dir is belong to Control System class contains with Integral Effect on Cont
 This program ran in Matlab
 
 ## Variables
-`s = tf('s');` defines s as 'frequency domain' for transfer function and will be used further. 
+`s = tf('s');` defines `s` as 'frequency domain' for transfer function and will be used further. 
 ```
 J = 0.01;
 b = 0.1;
@@ -63,7 +63,14 @@ For Kp = 1
 |   Overshoot	|   0	|   0	|   0	|   0.3523	|   0	|
 |   SSE	|   1.7396e-06	|   0.0034	|   0.0033	|   0.0034	|   6.6536e-05	|
 
-Notes: In theory, SSE should decrease following the increased Ki, but i suspect Matlab just can't compute too much floating point. Hence, i add two additional test with larger constant to show the effects.
+![Kp = 1, Ki = 1](https://user-images.githubusercontent.com/77116615/189711219-a3d00c73-0902-4a3f-899c-aca785cf0e6c.png)
+![Kp = 1, Ki = 3](https://user-images.githubusercontent.com/77116615/189711238-016657a1-8b3d-4209-8033-192464c00bed.png)
+![Kp = 1, Ki = 5](https://user-images.githubusercontent.com/77116615/189711244-acaa9905-21dc-4e80-915e-c628775a6665.png)
+![Kp = 1, Ki = 7](https://user-images.githubusercontent.com/77116615/189711248-cdac4205-6511-460d-8eb8-96378564774e.png)
+![Kp = 1, Ki = 9](https://user-images.githubusercontent.com/77116615/189711253-c2a2208c-fdb8-4640-b419-b2909250ed0e.png)
+
+
+Notes: In theory, SSE should decrease following the increased Ki, but i suspect Matlab just can't compute too much floating point. Hence, i add two additional test below with larger constant to show the effects.
 
 ## Additional Testing
 For Kp = 50
@@ -73,6 +80,10 @@ For Kp = 50
 |   Settling Time	|   0.6376	|   29.5503	|
 |   Overshoot	|   19.6150	|   6.1627	|
 |   SSE	|    0.1127	|   0.0082	|
+
+![Kp = 50, Ki = 0](https://user-images.githubusercontent.com/77116615/189711364-d43497e7-d0f4-4c2d-bdfe-d66c792d7e88.png)
+![Kp = 50, Ki = 5](https://user-images.githubusercontent.com/77116615/189711372-33a51860-2c9c-4b43-a01c-f31a7f9de2df.png)
+
 
 ## Conclusion
 Based on previous tests, we conclude that by adding Integral constant :
