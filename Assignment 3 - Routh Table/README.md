@@ -131,4 +131,4 @@ SYSTEM IS STABLE
 Contact nanda.r.d@mail.ugm.ac.id for more information
 ### Links
 You can access the source code here
-[github.com/nandard/routh_table.git](https://github.com/nandard/routh_table.git)
+[github.com/nandard/control-system.git](https://github.com/nandard/control-system.git)
