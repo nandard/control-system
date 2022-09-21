@@ -65,22 +65,22 @@ For Kp = 1
 
 ### Kp = 1, Kd = 1
 
-![Kp = 1, Kd = 1](https://user-images.githubusercontent.com/77116615/189711219-a3d00c73-0902-4a3f-899c-aca785cf0e6c.png)
+![Kp = 1, Kd = 1](https://user-images.githubusercontent.com/77116615/191516834-ff31ea45-d610-4966-8de0-ff36c636c12a.png)
 ### Kp = 1, Kd = 3
 
-![Kp = 1, Kd = 3](https://user-images.githubusercontent.com/77116615/189711238-016657a1-8b3d-4209-8033-192464c00bed.png)
+![Kp = 1, Kd = 3](https://user-images.githubusercontent.com/77116615/191517331-d85506ab-ef54-4ff5-8fa9-94b62bfbb22c.png)
 ### Kp = 1, Kd = 5
 
-![Kp = 1, Kd = 5](https://user-images.githubusercontent.com/77116615/189711244-acaa9905-21dc-4e80-915e-c628775a6665.png)
+![Kp = 1, Kd = 5](https://user-images.githubusercontent.com/77116615/191517353-28c72aa5-8caa-4e8e-8994-62bdadc75c06.png)
 ### Kp = 1, Kd = 7
 
-![Kp = 1, Kd = 7](https://user-images.githubusercontent.com/77116615/189711248-cdac4205-6511-460d-8eb8-96378564774e.png)
+![Kp = 1, Kd = 7](https://user-images.githubusercontent.com/77116615/191517382-31db825a-3143-4105-bb7a-311fe91927dd.png)
 ### Kp = 1, Kd = 9
 
-![Kp = 1, Kd = 9](https://user-images.githubusercontent.com/77116615/189711253-c2a2208c-fdb8-4640-b419-b2909250ed0e.png)
+![Kp = 1, Kd = 9](https://user-images.githubusercontent.com/77116615/191517410-12f3293b-4029-49f5-b032-401fb0085691.png)
 
 ## Conclusion
-Based on previous tests, we conclude that by adding Integral constant :
+Based on previous tests, we conclude that by adding Derivaitve constant :
 * Risie time is **increased**
 * Settling time is **increased**
 * Overshoot is **decreased**
