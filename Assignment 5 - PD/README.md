@@ -81,10 +81,10 @@ For Kp = 1
 
 ## Conclusion
 Based on previous tests, we conclude that by adding Derivaitve constant :
-* Risie time is **increased**
+* Rise time is **decreased**
 * Settling time is **increased**
-* Overshoot is **decreased**
-* SSE is **decreased**
+* Overshoot is **increased**
+* SSE is **slighty decreased**
 
 ### Notes
 Contact nanda.r.d@mail.ugm.ac.id for more information
