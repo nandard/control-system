@@ -26,6 +26,40 @@ Variable above is the constant for PSO tuning.
 
 
 ## Testing 
+### ITAE Cost Function
+![itae](https://user-images.githubusercontent.com/77116615/191710404-8b5a9d09-9362-4ace-9185-530930ad2abd.png)
+
+### Step Response
+![Screenshot 2022-09-22 162423](https://user-images.githubusercontent.com/77116615/191710444-cfb6b03f-4e3c-4651-b775-1ae2c7cd17d0.png)
+
+## Results
+### Before PSO-PID
+```
+        RiseTime: 1.0161
+    SettlingTime: 1.8471
+     SettlingMin: 0.0819
+     SettlingMax: 0.0907
+       Overshoot: 0
+      Undershoot: 0
+            Peak: 0.0907
+        PeakTime: 3.0168
+         SSError: 0.9095
+```
+### After PSO-PID
+Kp = 853.2738
+Ki = 73.5218
+Kd = 2500
+```
+        RiseTime: 9.6110e-04
+    SettlingTime: 0.0012
+     SettlingMin: 0.9952
+     SettlingMax: 0.9977
+       Overshoot: 0
+      Undershoot: 0
+            Peak: 0.9977
+        PeakTime: 0.0036
+         SSError: 0.0024
+```
 
 ### Notes
 Contact nanda.r.d@mail.ugm.ac.id for more information
