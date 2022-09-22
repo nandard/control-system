@@ -1,4 +1,4 @@
-# Derivative Effect on Control System
+# Improved Particle Swarm Optimization on PID Tuning
 This dir is belong to Control System class contains with Tuning PID with ZN1 and PSO on motor system.
 
 ## Software
@@ -47,7 +47,9 @@ Variable above is the constant for PSO tuning.
 ```
 ### After PSO-PID
 Kp = 853.2738
+
 Ki = 73.5218
+
 Kd = 2500
 ```
         RiseTime: 9.6110e-04
