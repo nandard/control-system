@@ -10,15 +10,6 @@ L = 0.5;
 num_motor = [K];
 den_motor = [J*L J*R+b*L R*b+K*K];
 motor = tf(num_motor,den_motor);
-motor_l = feedback(motor,1);
-step(motor_l)
-%step(motor_l/s);
-%impulse(motor_l);
-%step(motor_l/s^2);
-hold on
-stepinfo(motor_l)
-[y,t] = step(motor_l);
-ss_error = abs(1 - y(end))
 
 tic
 % Constant
@@ -122,13 +113,35 @@ Kd = xg(3)
 
 pid = tf([Kd Kp Ki],[0 1 0]);
 motor_cl = feedback(motor * pid, 1);
+motor_l = feedback(motor,1);
+figure(1)
+step(motor_l)
+hold on
 step(motor_cl)
-%step(motor_cl/s);
-%impulse(motor_cl);
-%step(motor_cl/s^2);
 legend("Before Tuning","After tuning");
 title("Step Response");
+figure(2)
+step(motor_l/s)
+hold on
+step(motor_cl/s)
+legend("Before Tuning","After tuning");
+title("Ramp Response");
+figure(3)
+impulse(motor_l)
+hold on
+impulse(motor_cl)
+legend("Before Tuning","After tuning");
+title("Impulse Response");
+figure(4)
+step(motor_l/s^2)
+hold on
+step(motor_cl/s^2)
+legend("Before Tuning","After tuning");
+title("Acc Response");
+stepinfo(motor_l)
 stepinfo(motor_cl)
+[y,t] = step(motor_l);
+ss_error = abs(1 - y(end))
 [y,t] = step(motor_cl);
 ss_error = abs(1 - y(end))
 
