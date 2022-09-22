@@ -27,12 +27,23 @@ Variable above is the constant for PSO tuning.
 
 ## Testing 
 ### ITAE Cost Function
-![itae](https://user-images.githubusercontent.com/77116615/191710404-8b5a9d09-9362-4ace-9185-530930ad2abd.png)
+![itae](https://user-images.githubusercontent.com/77116615/191751929-89ff2f77-7e1a-45a4-b535-f8f3a768ecc6.png)
 
 ### Step Response
-![Screenshot 2022-09-22 162423](https://user-images.githubusercontent.com/77116615/191710444-cfb6b03f-4e3c-4651-b775-1ae2c7cd17d0.png)
+![step](https://user-images.githubusercontent.com/77116615/191751960-eee905b9-e450-41de-8824-f2157e431238.png)
+
+### Ramp Response
+![ramp](https://user-images.githubusercontent.com/77116615/191752006-63e2fe9b-69ad-48eb-881d-7adb2b630819.png)
+
+### Impulse Response
+![impulse](https://user-images.githubusercontent.com/77116615/191752036-5e05bfd7-9448-437e-ada6-16d9744b1b89.png)
+
+### Acceleration Response
+![acceleration](https://user-images.githubusercontent.com/77116615/191752086-4f392de0-202b-429c-adc9-0935d10275b5.png)
 
 ## Results
+Elapsed time is 18.701024 seconds.
+
 ### Before PSO-PID
 ```
         RiseTime: 1.0161
@@ -46,19 +57,19 @@ Variable above is the constant for PSO tuning.
          SSError: 0.9095
 ```
 ### After PSO-PID
-Kp = 853.2738
+Kp = 853.3161
 
-Ki = 73.5218
+Ki = 74.1078
 
-Kd = 2500
+Kd = 2.4810e+03
 ```
-        RiseTime: 9.6110e-04
+        RiseTime: 9.5287e-04
     SettlingTime: 0.0012
-     SettlingMin: 0.9952
-     SettlingMax: 0.9977
+     SettlingMin: 0.9949
+     SettlingMax: 0.9976
        Overshoot: 0
       Undershoot: 0
-            Peak: 0.9977
+            Peak: 0.9976
         PeakTime: 0.0036
          SSError: 0.0024
 ```
