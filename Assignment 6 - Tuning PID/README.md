@@ -137,17 +137,20 @@ control(:,:,3)= tf([kd kp ki],[1 0]);
 
 ### Testing 
 
-#### Step Response
+#### Tangent Line ZN1
+![tangentline](https://user-images.githubusercontent.com/77116615/193520200-7bf992e5-18b2-4c7c-8499-23eaf1bc0791.png)
 
+#### Step Response
+![stepzn](https://user-images.githubusercontent.com/77116615/193520216-3c4e8db4-5685-45db-820e-96ba78591d17.png)
 
 #### Ramp Response
-
+![rampzn](https://user-images.githubusercontent.com/77116615/193520226-b58fd073-0e2b-42b4-bdbd-aae3f73c062e.png)
 
 #### Impulse Response
-
+![impulsezn](https://user-images.githubusercontent.com/77116615/193520231-80cbb907-d106-419a-a076-383795c07682.png)
 
 #### Acceleration Response
-
+![acczn](https://user-images.githubusercontent.com/77116615/193520252-61776d9f-2e4f-4715-8b1c-fe099b161773.png)
 
 ### Results
 Elapsed time is 0.065802 - 0.455767 seconds.
